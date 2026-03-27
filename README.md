@@ -68,16 +68,16 @@ docker exec -it openclaw-docker-lab openclaw dashboard --no-open
 If the browser shows pairing required, approve the latest device:
 
 ```bash
-docker exec -it openclaw-lab openclaw devices list
+docker exec -it openclaw-docker-lab openclaw devices list
 docker exec -it openclaw-docker-lab openclaw devices approve --latest
 ```
 
 ## Add an Agent and Bind
 
 ```bash
-docker exec -it openclaw-lab openclaw agents add alex
-docker exec -it openclaw-lab openclaw agents list --bindings
-docker exec -it openclaw-lab openclaw agents bind --agent alex --bind discord
+docker exec -it openclaw-docker-lab openclaw agents add alex
+docker exec -it openclaw-docker-lab openclaw agents list --bindings
+docker exec -it openclaw-docker-lab openclaw agents bind --agent alex --bind discord
 ```
 
-You can setting new agent persona (sample: `agents/alex/*.md`) on the dashboard.
+You can set a new agent persona on the dashboard (see `agents/alex/*.md` for an example).
